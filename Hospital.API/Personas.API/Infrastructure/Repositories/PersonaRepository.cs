@@ -40,5 +40,12 @@ namespace Personas.API.Infrastructure.Repositories
         {
             _context.Personas.Remove(persona);
         }
+
+        public IEnumerable<Persona> GetByTipo(TipoPersona tipo)
+        {
+            return (IEnumerable<Persona>)_context.Personas.Find(tipo);
+
+        }
+
     }
 }

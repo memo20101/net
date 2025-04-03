@@ -105,3 +105,5 @@ C:\Users\guillermo.sarmiento\source\repos\Hospital.API\Citas.API\obj\Debug\Citas
 C:\Users\guillermo.sarmiento\source\repos\Hospital.API\Citas.API\obj\Debug\Citas.API.csproj.Up2Date
 C:\Users\guillermo.sarmiento\source\repos\Hospital.API\Citas.API\obj\Debug\Citas.API.dll
 C:\Users\guillermo.sarmiento\source\repos\Hospital.API\Citas.API\obj\Debug\Citas.API.pdb
+C:\Users\guillermo.sarmiento\source\repos\Hospital.API\Citas.API\obj\Debug\Citas.API.Migrations.citasmigration.resources
+C:\Users\guillermo.sarmiento\source\repos\Hospital.API\Citas.API\obj\Debug\Citas.API.csproj.GenerateResource.cache

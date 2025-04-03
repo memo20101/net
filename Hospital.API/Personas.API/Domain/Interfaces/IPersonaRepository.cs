@@ -14,5 +14,6 @@ namespace Personas.API.Domain.Interfaces
         void Add(Persona persona);
         void Update(Persona persona);
         void Delete(Persona persona);
+        IEnumerable<Persona> GetByTipo(TipoPersona tipo);
     }
 }

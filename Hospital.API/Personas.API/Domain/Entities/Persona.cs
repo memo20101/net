@@ -22,7 +22,7 @@ namespace Personas.API.Domain.Entities
         public string Telefono { get; set; }
         public string Especialidad { get; set; }
         public string NumeroLicencia { get; set; }
-        public bool EsMedico() => Tipo == TipoPersona.Medico;
-        public bool EsPaciente() => Tipo == TipoPersona.Paciente;
+ 
+
     }
 }

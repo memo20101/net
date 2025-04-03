@@ -1,6 +1,8 @@
-﻿using Citas.API.Domain.Entities;
+﻿using Citas.API.Commands;
+using Citas.API.Domain.Entities;
 using Citas.API.Domain.Interfaces;
 using Citas.API.Infrastructure.Data;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;

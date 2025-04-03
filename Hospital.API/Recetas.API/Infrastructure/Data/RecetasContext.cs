@@ -9,7 +9,7 @@ namespace Recetas.API.Infrastructure.Data
 {
     public class RecetasContext : DbContext
     {
-        public RecetasContext() : base() { }
+        public RecetasContext() : base("Recetas") { }
 
         public DbSet<Receta> Recetas { get; set; }
     }

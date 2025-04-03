@@ -12,8 +12,8 @@ namespace Citas.API.Infrastructure.Mappings
     {
         public AutoMapperProfile()
         {
-            CreateMap<Cita, CitaDTO>();
-            CreateMap<CitaDTO, Cita>();
+            CreateMap<Cita, CitaDto>();
+            CreateMap<CitaDto, Cita>();
             // Agrega más mapeos según necesites
         }
     }

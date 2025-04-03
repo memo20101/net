@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Citas.API.Commands;
 using Citas.API.Domain.Entities;
 using Citas.API.DTOs;
 using System;
@@ -8,18 +9,23 @@ using System.Web;
 
 namespace Citas.API.Infrastructure.Mappings
 {
-    public class MappingProfile : Profile
+    public class CitaMappingProfile : Profile
     {
-        public MappingProfile()
+        public CitaMappingProfile()
         {
-            // Mapeo de Cita a CitaDto (para GET)
-            CreateMap<Cita, CitaDTO>();
+            // Mapeo desde la entidad Cita al DTO
+            CreateMap<Cita, CitaDto>()
+                .ForMember(dest => dest, opt => opt.MapFrom(src => src.Estado.ToString()));
 
-            // Mapeo de CitaDto a Cita (opcional, si quieres actualizar/crear desde el DTO)
-            CreateMap<CitaDTO, Cita>();
+            // Mapeo desde los commands a la entidad Cita
+            CreateMap<ProgramarCitaCommand, Cita>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore())
+                .ForMember(dest => dest.Estado, opt => opt.MapFrom(_ => EstadoCita.Pendiente));
 
-            // Mapeo de CrearCitaDto a Cita (para POST)
-            CreateMap<CrearCitaDTO, Cita>();
+            CreateMap<ActualizarCitaCommand, Cita>()
+                .ForMember(dest => dest.Estado, opt => opt.Ignore())
+                .ForMember(dest => dest.PacienteId, opt => opt.Ignore())
+                .ForMember(dest => dest.MedicoId, opt => opt.Ignore());
         }
     }
 }

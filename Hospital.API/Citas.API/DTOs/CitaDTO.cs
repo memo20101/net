@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Citas.API.DTOs
 {
-    public class CitaDTO
+    public class CitaDto
     {
         public int Id { get; set; }
         public int PacienteId { get; set; }

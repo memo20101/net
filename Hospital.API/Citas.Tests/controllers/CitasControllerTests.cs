@@ -41,16 +41,16 @@ namespace Citas.Tests.controllers
                 new Cita { Id = 1, PacienteId = 10, MedicoId = 20, Motivo = "Consulta general" }
             };
 
-            var citasDto = new List<CitaDTO>
+            var citasDto = new List<CitaDto>
             {
-                new CitaDTO { Id = 1, PacienteId = 10, MedicoId = 20, Motivo = "Consulta general" }
+                new CitaDto { Id = 1, PacienteId = 10, MedicoId = 20, Motivo = "Consulta general" }
             };
 
             _unitOfWorkMock.Setup(u => u.Citas.GetAll()).Returns(citas);
-            _mapperMock.Setup(m => m.Map<IEnumerable<CitaDTO>>(It.IsAny<IEnumerable<Cita>>())).Returns(citasDto);
+            _mapperMock.Setup(m => m.Map<IEnumerable<CitaDto>>(It.IsAny<IEnumerable<Cita>>())).Returns(citasDto);
 
             // Act
-            var actionResult = _controller.Get() as OkNegotiatedContentResult<IEnumerable<CitaDTO>>;
+            var actionResult = _controller.Get() as OkNegotiatedContentResult<IEnumerable<CitaDto>>;
 
             // Assert
             Assert.IsNotNull(actionResult);
@@ -83,16 +83,16 @@ namespace Citas.Tests.controllers
             };
 
             var cita = new Cita { Id = 1 };
-            var citaDto = new CitaDTO { Id = 1 };
+            var citaDto = new CitaDto { Id = 1 };
 
             _mapperMock.Setup(m => m.Map<Cita>(crearCitaDto)).Returns(cita);
-            _mapperMock.Setup(m => m.Map<CitaDTO>(cita)).Returns(citaDto);
+            _mapperMock.Setup(m => m.Map<CitaDto>(cita)).Returns(citaDto);
 
             // Act
             var actionResult = _controller.Create(crearCitaDto);
 
             // Assert
-            Assert.IsInstanceOfType(actionResult, typeof(CreatedAtRouteNegotiatedContentResult<CitaDTO>));
+            Assert.IsInstanceOfType(actionResult, typeof(CreatedAtRouteNegotiatedContentResult<CitaDto>));
         }
 
         [TestMethod]

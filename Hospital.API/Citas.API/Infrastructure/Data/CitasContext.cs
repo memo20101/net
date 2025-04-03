@@ -9,12 +9,23 @@ namespace Citas.API.Infrastructure.Data
 {
     public class CitasContext : DbContext
     {
-        public CitasContext() : base("name=Cita")
+        public CitasContext() 
         {
-
+            this.Configuration.LazyLoadingEnabled = true;
         }
 
 
         public DbSet<Cita> Citas { get; set; }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Cita>()
+                .Property(q => q.Estado)
+                .IsRequired();
+        }
+
+
+
     }
 }

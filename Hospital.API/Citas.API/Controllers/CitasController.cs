@@ -1,9 +1,12 @@
 ﻿using AutoMapper;
+using Citas.API.Commands;
 using Citas.API.Domain.Entities;
 using Citas.API.Domain.Interfaces;
 using Citas.API.DTOs;
 using Citas.API.Infrastructure.Data;
 using Citas.API.Infrastructure.Repositories;
+using Citas.API.Queries;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,102 +18,75 @@ namespace Citas.API.Controllers
     [RoutePrefix("api/citas")]
     public class CitasController : ApiController
     {
-        private readonly ICitaUnitOfWork _unitOfWork;
+        private readonly IMediator _mediator;
         private readonly IMapper _mapper;
 
-        public CitasController(ICitaUnitOfWork unitOfWork, IMapper mapper)
+        public CitasController(IMediator mediator, IMapper mapper)
         {
-            _unitOfWork = unitOfWork;
+            _mediator = mediator;
             _mapper = mapper;
         }
 
-        /// <summary>
-        /// Obtiene todas las citas.
-        /// </summary>
-        [HttpGet]
-        [Route("")]
-        public IHttpActionResult Get()
-        {
-            var citas = _unitOfWork.Citas.GetAll();
-            var citasDto = _mapper.Map<IEnumerable<CitaDTO>>(citas);
-
-            return Ok(citasDto);
-        }
-
-        /// <summary>
-        /// Obtiene una cita específica por Id.
-        /// </summary>
-        [HttpGet]
-        [Route("{id:int}")]
-        public IHttpActionResult GetById(int id)
-        {
-            var cita = _unitOfWork.Citas.GetById(id);
-
-            if (cita == null)
-                return NotFound();
-
-            var citaDto = _mapper.Map<CitaDTO>(cita);
-            return Ok(citaDto);
-        }
-
-        /// <summary>
-        /// Crea una nueva cita.
-        /// </summary>
         [HttpPost]
         [Route("")]
-        public IHttpActionResult Create([FromBody] CrearCitaDTO crearCitaDto)
+        public IHttpActionResult ProgramarCita([FromBody] ProgramarCitaCommand command)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            var cita = _mapper.Map<Cita>(crearCitaDto);
-            _unitOfWork.Citas.Add(cita);
-            _unitOfWork.Complete();
-
-            var citaDto = _mapper.Map<CitaDTO>(cita);
-            return CreatedAtRoute("DefaultApi", new { id = citaDto.Id }, citaDto);
+            var citaId = _mediator.Send(command).Result;
+            return Ok(new { Id = citaId });
         }
 
-        /// <summary>
-        /// Actualiza una cita existente.
-        /// </summary>
         [HttpPut]
-        [Route("{id:int}")]
-        public IHttpActionResult Update(int id, [FromBody] CrearCitaDTO actualizarCitaDto)
+        [Route("{id}")]
+        public IHttpActionResult ActualizarCita(int id, [FromBody] ActualizarCitaCommand command)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            var citaExistente = _unitOfWork.Citas.GetById(id);
-            if (citaExistente == null)
-                return NotFound();
-
-            // Mapear los cambios al objeto existente
-            _mapper.Map(actualizarCitaDto, citaExistente);
-
-            _unitOfWork.Citas.Update(citaExistente);
-            _unitOfWork.Complete();
-
-            var citaDto = _mapper.Map<CitaDTO>(citaExistente);
-            return Ok(citaDto);
+            command.Id = id;
+            _mediator.Send(command).Wait();
+            return Ok();
         }
 
-        /// <summary>
-        /// Elimina una cita existente.
-        /// </summary>
         [HttpDelete]
-        [Route("{id:int}")]
-        public IHttpActionResult Delete(int id)
+        [Route("{id}")]
+        public IHttpActionResult CancelarCita(int id)
         {
-            var citaExistente = _unitOfWork.Citas.GetById(id);
+            var command = new CancelarCitaCommand { Id = id };
+            _mediator.Send(command).Wait();
+            return Ok();
+        }
 
-            if (citaExistente == null)
-                return NotFound();
+        [HttpGet]
+        [Route("{id}")]
+        public IHttpActionResult ObtenerCitaPorId(int id)
+        {
+            var query = new ObtenerCitaPorIdQuery { Id = id };
+            var cita = _mediator.Send(query).Result;
+            return Ok(cita);
+        }
 
-            _unitOfWork.Citas.Delete(citaExistente);
-            _unitOfWork.Complete();
+        [HttpGet]
+        [Route("")]
+        public IHttpActionResult ListarTodasLasCitas()
+        {
+            var query = new ListarCitasQuery();
+            var citas = _mediator.Send(query).Result;
+            return Ok(citas);
+        }
 
-            return Ok($"Cita con id {id} eliminada correctamente.");
+        [HttpGet]
+        [Route("medico/{medicoId}")]
+        public IHttpActionResult ListarCitasPorMedico(int medicoId)
+        {
+            var query = new ListarCitasPorMedicoQuery { MedicoId = medicoId };
+            var citas = _mediator.Send(query).Result;
+            return Ok(citas);
+        }
+
+        [HttpGet]
+        [Route("paciente/{pacienteId}")]
+        public IHttpActionResult ListarCitasPorPaciente(int pacienteId)
+        {
+            var query = new ListarCitasPorPacienteQuery { PacienteId = pacienteId };
+            var citas = _mediator.Send(query).Result;
+            return Ok(citas);
         }
     }
 }

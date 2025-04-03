@@ -14,5 +14,6 @@ namespace Citas.API.Domain.Interfaces
         void Add(Cita cita);
         void Update(Cita cita);
         void Delete(Cita cita);
+  
     }
 }

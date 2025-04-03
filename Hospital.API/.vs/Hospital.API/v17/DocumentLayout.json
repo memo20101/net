@@ -1,105 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{9C131C94-822E-4E66-AFA8-F4881E163021}|Citas.API\\Citas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\citas.api\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{9C131C94-822E-4E66-AFA8-F4881E163021}|Citas.API\\Citas.API.csproj|solutionrelative:citas.api\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78516D55-0AD1-4EB9-981B-99F0E44E282C}|Personas.API\\Personas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\personas.api\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{78516D55-0AD1-4EB9-981B-99F0E44E282C}|Personas.API\\Personas.API.csproj|solutionrelative:personas.api\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78516D55-0AD1-4EB9-981B-99F0E44E282C}|Personas.API\\Personas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\personas.api\\infrastructure\\data\\personascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78516D55-0AD1-4EB9-981B-99F0E44E282C}|Personas.API\\Personas.API.csproj|solutionrelative:personas.api\\infrastructure\\data\\personascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C131C94-822E-4E66-AFA8-F4881E163021}|Citas.API\\Citas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\citas.api\\infrastructure\\data\\citascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C131C94-822E-4E66-AFA8-F4881E163021}|Citas.API\\Citas.API.csproj|solutionrelative:citas.api\\infrastructure\\data\\citascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C131C94-822E-4E66-AFA8-F4881E163021}|Citas.API\\Citas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\citas.api\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{9C131C94-822E-4E66-AFA8-F4881E163021}|Citas.API\\Citas.API.csproj|solutionrelative:citas.api\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 3,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Personas.API\\Web.config",
-              "RelativeDocumentMoniker": "Personas.API\\Web.config",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Personas.API\\Web.config",
-              "RelativeToolTip": "Personas.API\\Web.config",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFEAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-04-01T16:02:22.213Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PersonasContext.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Personas.API\\Infrastructure\\Data\\PersonasContext.cs",
-              "RelativeDocumentMoniker": "Personas.API\\Infrastructure\\Data\\PersonasContext.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Personas.API\\Infrastructure\\Data\\PersonasContext.cs",
-              "RelativeToolTip": "Personas.API\\Infrastructure\\Data\\PersonasContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T16:00:43.5Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CitasContext.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Citas.API\\Infrastructure\\Data\\CitasContext.cs",
-              "RelativeDocumentMoniker": "Citas.API\\Infrastructure\\Data\\CitasContext.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Citas.API\\Infrastructure\\Data\\CitasContext.cs",
-              "RelativeToolTip": "Citas.API\\Infrastructure\\Data\\CitasContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T15:48:57.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Citas.API\\Web.config",
-              "RelativeDocumentMoniker": "Citas.API\\Web.config",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Citas.API\\Web.config",
-              "RelativeToolTip": "Citas.API\\Web.config",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAAwE4AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-04-01T15:48:26.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "packages.config",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Citas.API\\packages.config",
-              "RelativeDocumentMoniker": "Citas.API\\packages.config",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Citas.API\\packages.config",
-              "RelativeToolTip": "Citas.API\\packages.config",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-04-01T15:25:46.937Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
