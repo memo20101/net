@@ -179,7 +179,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
     <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
@@ -235,7 +234,6 @@
     <Compile Include="Infrastructure\Mappings\AutoMapperProfile.cs" />
     <Compile Include="Infrastructure\Mappings\MappingProfile.cs" />
     <Compile Include="Infrastructure\Repositories\CitaRepository.cs" />
-    <Compile Include="Infrastructure\UnityResolver.cs" />
     <Compile Include="Migrations\202504011826203_citasmigration.cs" />
     <Compile Include="Migrations\202504011826203_citasmigration.Designer.cs">
       <DependentUpon>202504011826203_citasmigration.cs</DependentUpon>

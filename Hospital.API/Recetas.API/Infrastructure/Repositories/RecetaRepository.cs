@@ -1,4 +1,5 @@
 ﻿using Recetas.API.Domain.Entities;
+using Recetas.API.Domain.Interfaces;
 using Recetas.API.Infrastructure.Data;
 using System;
 using System.Collections.Generic;
@@ -16,14 +17,40 @@ namespace Recetas.API.Infrastructure.Repositories
             _context = context;
         }
 
-        public IEnumerable<Receta> GetAll() => _context.Recetas.ToList();
+        public IEnumerable<Receta> GetAll()
+        {
+            return _context.Recetas.ToList();
+        }
 
-        public Receta GetById(int id) => _context.Recetas.Find(id);
+        public Receta GetById(int id)
+        {
+            return _context.Recetas.Find(id);
+        }
 
-        public void Add(Receta receta) => _context.Recetas.Add(receta);
+        public void Add(Receta receta)
+        {
+            _context.Recetas.Add(receta);
+            _context.SaveChanges();
+        }
 
-        public void Update(Receta receta) => _context.Entry(receta).State = System.Data.Entity.EntityState.Modified;
+        public void Update(Receta receta)
+        {
+            var existente = _context.Recetas.Find(receta.Id);
+            if (existente != null)
+            {
+                _context.Entry(existente).CurrentValues.SetValues(receta);
+                _context.SaveChanges();
+            }
+        }
 
-        public void Delete(Receta receta) => _context.Recetas.Remove(receta);
+        public IEnumerable<Receta> GetByPacienteId(int pacienteId)
+        {
+            return _context.Recetas.Where(r => r.PacienteId == pacienteId).ToList();
+        }
+
+        public IEnumerable<Receta> GetByMedicoId(int medicoId)
+        {
+            return _context.Recetas.Where(r => r.MedicoId == medicoId).ToList();
+        }
     }
 }

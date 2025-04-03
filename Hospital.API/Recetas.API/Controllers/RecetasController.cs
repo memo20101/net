@@ -1,7 +1,10 @@
 ﻿using AutoMapper;
+using MediatR;
+using Recetas.API.Commands;
 using Recetas.API.Domain.Entities;
 using Recetas.API.DTOs;
 using Recetas.API.Infrastructure.Data;
+using Recetas.API.Queries;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,47 +16,66 @@ namespace Recetas.API.Controllers
     [RoutePrefix("api/recetas")]
     public class RecetasController : ApiController
     {
-        private readonly IRecetaUnitOfWork _unitOfWork;
+        private readonly IMediator _mediator;
         private readonly IMapper _mapper;
 
-        public RecetasController(IRecetaUnitOfWork unitOfWork, IMapper mapper)
+        public RecetasController(IMediator mediator, IMapper mapper)
         {
-            _unitOfWork = unitOfWork;
+            _mediator = mediator;
             _mapper = mapper;
-        }
-
-        [HttpGet]
-        [Route("")]
-        public IHttpActionResult Get()
-        {
-            var recetas = _unitOfWork.Recetas.GetAll();
-            var recetasDto = _mapper.Map<IEnumerable<RecetaDto>>(recetas);
-            return Ok(recetasDto);
         }
 
         [HttpPost]
         [Route("")]
-        public IHttpActionResult Create(CrearRecetaDto crearRecetaDto)
+        public IHttpActionResult Crear([FromBody] CrearRecetaCommand command)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            var receta = _mapper.Map<Receta>(crearRecetaDto);
-            _unitOfWork.Recetas.Add(receta);
-            _unitOfWork.Complete();
-
-            var recetaDto = _mapper.Map<RecetaDto>(receta);
-            return Ok(recetaDto);
+            var id = _mediator.Send(command).Result;
+            return Ok(new { Id = id });
         }
 
-        public object Delete(int v)
+        [HttpPut]
+        [Route("{id}")]
+        public IHttpActionResult Actualizar(int id, [FromBody] ActualizarRecetaCommand command)
         {
-            throw new NotImplementedException();
+            command.Id = id;
+            _mediator.Send(command).Wait();
+            return Ok();
         }
 
-        public object GetById(int v)
+        [HttpPut]
+        [Route("{id}/estado")]
+        public IHttpActionResult CambiarEstado(int id, [FromBody] CambiarEstadoRecetaCommand command)
         {
-            throw new NotImplementedException();
+            command.Id = id;
+            _mediator.Send(command).Wait();
+            return Ok();
+        }
+
+        [HttpGet]
+        [Route("{id}")]
+        public IHttpActionResult ObtenerPorId(int id)
+        {
+            var query = new ObtenerRecetaPorIdQuery { Id = id };
+            var result = _mediator.Send(query).Result;
+            return Ok(result);
+        }
+
+        [HttpGet]
+        [Route("paciente/{pacienteId}")]
+        public IHttpActionResult ListarPorPaciente(int pacienteId)
+        {
+            var query = new ListarRecetasPorPacienteQuery { PacienteId = pacienteId };
+            var result = _mediator.Send(query).Result;
+            return Ok(result);
+        }
+
+        [HttpGet]
+        [Route("medico/{medicoId}")]
+        public IHttpActionResult ListarPorMedico(int medicoId)
+        {
+            var query = new ListarRecetasPorMedicoQuery { MedicoId = medicoId };
+            var result = _mediator.Send(query).Result;
+            return Ok(result);
         }
     }
 }

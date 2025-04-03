@@ -12,6 +12,11 @@ using Citas.API.Infrastructure.Repositories;
 using Citas.API.Domain.Interfaces;
 using Citas.API.Infrastructure.Mappings;
 using Citas.API.Handlers;
+using Recetas.API.Domain.Interfaces;
+using Recetas.API.Handlers;
+using Recetas.API.Infrastructure.Data;
+using Recetas.API.Infrastructure.Mappings;
+using Recetas.API.Infrastructure.Repositories;
 
 namespace Recetas.API
 {
@@ -21,8 +26,10 @@ namespace Recetas.API
         {
             var builder = new ContainerBuilder();
 
+            // 1. Registrar controladores API
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
 
+            // 2. Configurar MediatR (igual que en los otros microservicios)
             builder.RegisterType<Mediator>().As<IMediator>().InstancePerLifetimeScope();
             builder.Register<ServiceFactory>(ctx =>
             {
@@ -30,20 +37,22 @@ namespace Recetas.API
                 return t => c.Resolve(t);
             });
 
+            // 3. Registrar repositorios y contexto
+            builder.RegisterType<RecetasContext>().InstancePerLifetimeScope();
+            builder.RegisterType<RecetaRepository>().As<IRecetaRepository>().InstancePerLifetimeScope();
 
-            builder.RegisterType<CitasContext>().InstancePerLifetimeScope();
-            builder.RegisterType<CitaRepository>().As<ICitaRepository>().InstancePerLifetimeScope();
-
+            // 4. Configurar AutoMapper
             builder.Register(ctx => new MapperConfiguration(cfg =>
             {
-                cfg.AddProfile<CitaMappingProfile>();
+                cfg.AddProfile<RecetaMappingProfile>();
             }).CreateMapper()).As<IMapper>().InstancePerLifetimeScope();
 
-
-            builder.RegisterAssemblyTypes(typeof(ProgramarCitaHandler).Assembly)
+            // 5. Registrar todos los handlers
+            builder.RegisterAssemblyTypes(typeof(CrearRecetaHandler).Assembly)
                   .AsClosedTypesOf(typeof(IRequestHandler<,>))
                   .InstancePerLifetimeScope();
 
+            // Construir el contenedor y configurar Web API
             var container = builder.Build();
             GlobalConfiguration.Configuration.DependencyResolver = new AutofacWebApiDependencyResolver(container);
             GlobalConfiguration.Configure(WebApiConfig.Register);
