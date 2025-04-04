@@ -9,7 +9,7 @@ namespace Recetas.API.Infrastructure.Data
 {
     public class RecetasContext : DbContext
     {
-        public RecetasContext() : base("RecetasConnection")
+        public RecetasContext() : base("Receta")
         {
             Configuration.LazyLoadingEnabled = false;
         }

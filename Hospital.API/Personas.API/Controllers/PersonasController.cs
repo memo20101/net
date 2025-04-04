@@ -22,7 +22,7 @@ namespace Personas.API.Controllers
         {
             _mediator = mediator;
         }
-
+        [Authorize]
         [HttpGet]
         [Route("")]
         public async Task<IHttpActionResult> GetAll()
@@ -31,16 +31,20 @@ namespace Personas.API.Controllers
             var result = await _mediator.Send(query);
             return Ok(result);
         }
-
+        [Authorize]
         [HttpGet]
         [Route("{id:int}")]
         public async Task<IHttpActionResult> GetById(int id)
         {
             var query = new GetPersonaByIdQuery { Id = id };
             var result = await _mediator.Send(query);
+
+            if (result == null)
+                return NotFound();
+
             return Ok(result);
         }
-
+        [Authorize]
         [HttpGet]
         [Route("tipo/{tipo}")]
         public async Task<IHttpActionResult> GetByTipo(TipoPersona tipo)

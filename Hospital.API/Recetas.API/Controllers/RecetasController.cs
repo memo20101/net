@@ -5,10 +5,6 @@ using Recetas.API.Domain.Entities;
 using Recetas.API.DTOs;
 using Recetas.API.Infrastructure.Data;
 using Recetas.API.Queries;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Http;
 
 namespace Recetas.API.Controllers
@@ -32,7 +28,7 @@ namespace Recetas.API.Controllers
             var id = _mediator.Send(command).Result;
             return Ok(new { Id = id });
         }
-
+        [Authorize]
         [HttpPut]
         [Route("{id}")]
         public IHttpActionResult Actualizar(int id, [FromBody] ActualizarRecetaCommand command)
@@ -50,7 +46,7 @@ namespace Recetas.API.Controllers
             _mediator.Send(command).Wait();
             return Ok();
         }
-
+        [Authorize]
         [HttpGet]
         [Route("{id}")]
         public IHttpActionResult ObtenerPorId(int id)
@@ -59,7 +55,7 @@ namespace Recetas.API.Controllers
             var result = _mediator.Send(query).Result;
             return Ok(result);
         }
-
+        [Authorize]
         [HttpGet]
         [Route("paciente/{pacienteId}")]
         public IHttpActionResult ListarPorPaciente(int pacienteId)
@@ -68,7 +64,7 @@ namespace Recetas.API.Controllers
             var result = _mediator.Send(query).Result;
             return Ok(result);
         }
-
+        [Authorize]
         [HttpGet]
         [Route("medico/{medicoId}")]
         public IHttpActionResult ListarPorMedico(int medicoId)

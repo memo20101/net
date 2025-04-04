@@ -1,0 +1,27 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "Identidad.API\\Identidad.API.csproj",
+        "Action": "Start",
+        "DebugTarget": "IIS Express (Microsoft Edge)"
+      },
+      {
+        "Path": "Personas.API\\Personas.API.csproj",
+        "Action": "Start",
+        "DebugTarget": "IIS Express (Microsoft Edge)"
+      },
+      {
+        "Path": "Citas.API\\Citas.API.csproj",
+        "Action": "Start",
+        "DebugTarget": "IIS Express (Microsoft Edge)"
+      },
+      {
+        "Path": "Recetas.API\\Recetas.API.csproj",
+        "Action": "Start",
+        "DebugTarget": "IIS Express (Microsoft Edge)"
+      }
+    ]
+  }
+]

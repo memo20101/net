@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C131C94-822E-4E66-AFA8-F4881E163021}|Citas.API\\Citas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\citas.api\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C131C94-822E-4E66-AFA8-F4881E163021}|Citas.API\\Citas.API.csproj|solutionrelative:citas.api\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C131C94-822E-4E66-AFA8-F4881E163021}|Citas.API\\Citas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\citas.api\\infrastructure\\messaging\\rabbitmqproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C131C94-822E-4E66-AFA8-F4881E163021}|Citas.API\\Citas.API.csproj|solutionrelative:citas.api\\infrastructure\\messaging\\rabbitmqproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C131C94-822E-4E66-AFA8-F4881E163021}|Citas.API\\Citas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\citas.api\\infrastructure\\repositories\\citarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C131C94-822E-4E66-AFA8-F4881E163021}|Citas.API\\Citas.API.csproj|solutionrelative:citas.api\\infrastructure\\repositories\\citarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C131C94-822E-4E66-AFA8-F4881E163021}|Citas.API\\Citas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\citas.api\\handlers\\programarcitahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C131C94-822E-4E66-AFA8-F4881E163021}|Citas.API\\Citas.API.csproj|solutionrelative:citas.api\\handlers\\programarcitahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C131C94-822E-4E66-AFA8-F4881E163021}|Citas.API\\Citas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\citas.api\\commands\\programarcitacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C131C94-822E-4E66-AFA8-F4881E163021}|Citas.API\\Citas.API.csproj|solutionrelative:citas.api\\commands\\programarcitacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78516D55-0AD1-4EB9-981B-99F0E44E282C}|Personas.API\\Personas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\personas.api\\domain\\interfaces\\ipersonarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78516D55-0AD1-4EB9-981B-99F0E44E282C}|Personas.API\\Personas.API.csproj|solutionrelative:personas.api\\domain\\interfaces\\ipersonarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\controllers\\recetascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\controllers\\recetascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,72 +35,8 @@
       "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\controllers\\recetascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\controllers\\recetascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\handlers\\obtenerrecetaporidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\handlers\\obtenerrecetaporidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\handlers\\actualizarrecetahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\handlers\\actualizarrecetahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\handlers\\crearrecetahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\handlers\\crearrecetahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\queries\\listarrecetaspormedicoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\queries\\listarrecetaspormedicoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\queries\\listarrecetasporpacientequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\queries\\listarrecetasporpacientequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\queries\\obtenerrecetaporidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\queries\\obtenerrecetaporidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\commands\\cambiarestadorecetacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\commands\\cambiarestadorecetacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\commands\\actualizarrecetacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\commands\\actualizarrecetacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\commands\\crearrecetacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\commands\\crearrecetacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\infrastructure\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\infrastructure\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\dtos\\recetadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\dtos\\recetadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\infrastructure\\repositories\\recetarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\infrastructure\\repositories\\recetarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\infrastructure\\data\\recetascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\infrastructure\\data\\recetascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\domain\\interfaces\\irecetarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\domain\\interfaces\\irecetarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\domain\\entities\\estadoreceta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\domain\\entities\\estadoreceta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\domain\\entities\\receta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\domain\\entities\\receta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|c:\\users\\guillermo.sarmiento\\source\\repos\\hospital.api\\recetas.api\\app_start\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA8D34C3-305E-4BC3-910B-005F328D6DC9}|Recetas.API\\Recetas.API.csproj|solutionrelative:recetas.api\\app_start\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -95,261 +51,118 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Global.asax.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Citas.API\\Global.asax.cs",
-              "RelativeDocumentMoniker": "Citas.API\\Global.asax.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Citas.API\\Global.asax.cs",
-              "RelativeToolTip": "Citas.API\\Global.asax.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "RabbitMQProducer.cs",
+              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Citas.API\\Infrastructure\\Messaging\\RabbitMQProducer.cs",
+              "RelativeDocumentMoniker": "Citas.API\\Infrastructure\\Messaging\\RabbitMQProducer.cs",
+              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Citas.API\\Infrastructure\\Messaging\\RabbitMQProducer.cs",
+              "RelativeToolTip": "Citas.API\\Infrastructure\\Messaging\\RabbitMQProducer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:57:40.253Z",
+              "WhenOpened": "2025-04-03T19:19:00.968Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Global.asax.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Global.asax.cs",
-              "RelativeDocumentMoniker": "Recetas.API\\Global.asax.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Global.asax.cs",
-              "RelativeToolTip": "Recetas.API\\Global.asax.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAcwBoAAAAxAAAAAAAAAA==",
+              "Title": "CitaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Citas.API\\Infrastructure\\Repositories\\CitaRepository.cs",
+              "RelativeDocumentMoniker": "Citas.API\\Infrastructure\\Repositories\\CitaRepository.cs",
+              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Citas.API\\Infrastructure\\Repositories\\CitaRepository.cs",
+              "RelativeToolTip": "Citas.API\\Infrastructure\\Repositories\\CitaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:53:46.61Z",
+              "WhenOpened": "2025-04-03T19:14:47.626Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Web.config",
-              "RelativeDocumentMoniker": "Recetas.API\\Web.config",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Web.config",
-              "RelativeToolTip": "Recetas.API\\Web.config",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-04-03T04:52:51.324Z",
+              "Title": "ProgramarCitaHandler.cs",
+              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Citas.API\\Handlers\\ProgramarCitaHandler.cs",
+              "RelativeDocumentMoniker": "Citas.API\\Handlers\\ProgramarCitaHandler.cs",
+              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Citas.API\\Handlers\\ProgramarCitaHandler.cs",
+              "RelativeToolTip": "Citas.API\\Handlers\\ProgramarCitaHandler.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T19:11:36.936Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "RecetasController.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Controllers\\RecetasController.cs",
-              "RelativeDocumentMoniker": "Recetas.API\\Controllers\\RecetasController.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Controllers\\RecetasController.cs",
-              "RelativeToolTip": "Recetas.API\\Controllers\\RecetasController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAA5wE8AAAAFAAAAAAAAAA==",
+              "Title": "ProgramarCitaCommand.cs",
+              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Citas.API\\Commands\\ProgramarCitaCommand.cs",
+              "RelativeDocumentMoniker": "Citas.API\\Commands\\ProgramarCitaCommand.cs",
+              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Citas.API\\Commands\\ProgramarCitaCommand.cs",
+              "RelativeToolTip": "Citas.API\\Commands\\ProgramarCitaCommand.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:51:48.752Z",
+              "WhenOpened": "2025-04-03T19:11:28.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ObtenerRecetaPorIdHandler.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Handlers\\ObtenerRecetaPorIdHandler.cs",
-              "RelativeDocumentMoniker": "Recetas.API\\Handlers\\ObtenerRecetaPorIdHandler.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Handlers\\ObtenerRecetaPorIdHandler.cs",
-              "RelativeToolTip": "Recetas.API\\Handlers\\ObtenerRecetaPorIdHandler.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA9wB4AAAAFAAAAAAAAAA==",
+              "Title": "IPersonaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Personas.API\\Domain\\Interfaces\\IPersonaRepository.cs",
+              "RelativeDocumentMoniker": "Personas.API\\Domain\\Interfaces\\IPersonaRepository.cs",
+              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Personas.API\\Domain\\Interfaces\\IPersonaRepository.cs",
+              "RelativeToolTip": "Personas.API\\Domain\\Interfaces\\IPersonaRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:51:26.351Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ActualizarRecetaHandler.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Handlers\\ActualizarRecetaHandler.cs",
-              "RelativeDocumentMoniker": "Recetas.API\\Handlers\\ActualizarRecetaHandler.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Handlers\\ActualizarRecetaHandler.cs",
-              "RelativeToolTip": "Recetas.API\\Handlers\\ActualizarRecetaHandler.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAswCIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:50:48.478Z",
+              "WhenOpened": "2025-04-03T18:43:49.126Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "CrearRecetaHandler.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Handlers\\CrearRecetaHandler.cs",
-              "RelativeDocumentMoniker": "Recetas.API\\Handlers\\CrearRecetaHandler.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Handlers\\CrearRecetaHandler.cs",
-              "RelativeToolTip": "Recetas.API\\Handlers\\CrearRecetaHandler.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAwwCUAAAAFAAAAAAAAAA==",
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Global.asax.cs",
+              "RelativeDocumentMoniker": "Recetas.API\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Global.asax.cs",
+              "RelativeToolTip": "Recetas.API\\Global.asax.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABQAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:50:03.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ListarRecetasPorMedicoQuery.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Queries\\ListarRecetasPorMedicoQuery.cs",
-              "RelativeDocumentMoniker": "Recetas.API\\Queries\\ListarRecetasPorMedicoQuery.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Queries\\ListarRecetasPorMedicoQuery.cs",
-              "RelativeToolTip": "Recetas.API\\Queries\\ListarRecetasPorMedicoQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:49:01.119Z",
+              "WhenOpened": "2025-04-03T18:37:36.139Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ListarRecetasPorPacienteQuery.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Queries\\ListarRecetasPorPacienteQuery.cs",
-              "RelativeDocumentMoniker": "Recetas.API\\Queries\\ListarRecetasPorPacienteQuery.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Queries\\ListarRecetasPorPacienteQuery.cs",
-              "RelativeToolTip": "Recetas.API\\Queries\\ListarRecetasPorPacienteQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\App_Start\\Startup.cs",
+              "RelativeDocumentMoniker": "Recetas.API\\App_Start\\Startup.cs",
+              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\App_Start\\Startup.cs",
+              "RelativeToolTip": "Recetas.API\\App_Start\\Startup.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCMAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:48:18.455Z",
+              "WhenOpened": "2025-04-03T18:13:33.917Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ObtenerRecetaPorIdQuery.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Queries\\ObtenerRecetaPorIdQuery.cs",
-              "RelativeDocumentMoniker": "Recetas.API\\Queries\\ObtenerRecetaPorIdQuery.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Queries\\ObtenerRecetaPorIdQuery.cs",
-              "RelativeToolTip": "Recetas.API\\Queries\\ObtenerRecetaPorIdQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:47:21.449Z",
+              "DocumentIndex": 7,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Web.config",
+              "RelativeDocumentMoniker": "Recetas.API\\Web.config",
+              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Web.config",
+              "RelativeToolTip": "Recetas.API\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-04-03T18:11:59.545Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CambiarEstadoRecetaCommand.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Commands\\CambiarEstadoRecetaCommand.cs",
-              "RelativeDocumentMoniker": "Recetas.API\\Commands\\CambiarEstadoRecetaCommand.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Commands\\CambiarEstadoRecetaCommand.cs",
-              "RelativeToolTip": "Recetas.API\\Commands\\CambiarEstadoRecetaCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "RecetasController.cs",
+              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Controllers\\RecetasController.cs",
+              "RelativeDocumentMoniker": "Recetas.API\\Controllers\\RecetasController.cs",
+              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Controllers\\RecetasController.cs",
+              "RelativeToolTip": "Recetas.API\\Controllers\\RecetasController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAA7wAsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:46:40.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ActualizarRecetaCommand.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Commands\\ActualizarRecetaCommand.cs",
-              "RelativeDocumentMoniker": "Recetas.API\\Commands\\ActualizarRecetaCommand.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Commands\\ActualizarRecetaCommand.cs",
-              "RelativeToolTip": "Recetas.API\\Commands\\ActualizarRecetaCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:45:58.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CrearRecetaCommand.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Commands\\CrearRecetaCommand.cs",
-              "RelativeDocumentMoniker": "Recetas.API\\Commands\\CrearRecetaCommand.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Commands\\CrearRecetaCommand.cs",
-              "RelativeToolTip": "Recetas.API\\Commands\\CrearRecetaCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:44:38.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MappingProfile.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Infrastructure\\Mappings\\MappingProfile.cs",
-              "RelativeDocumentMoniker": "Recetas.API\\Infrastructure\\Mappings\\MappingProfile.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Infrastructure\\Mappings\\MappingProfile.cs",
-              "RelativeToolTip": "Recetas.API\\Infrastructure\\Mappings\\MappingProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:42:26.038Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "RecetaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Infrastructure\\Repositories\\RecetaRepository.cs",
-              "RelativeDocumentMoniker": "Recetas.API\\Infrastructure\\Repositories\\RecetaRepository.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Infrastructure\\Repositories\\RecetaRepository.cs",
-              "RelativeToolTip": "Recetas.API\\Infrastructure\\Repositories\\RecetaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:40:44.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "RecetasContext.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Infrastructure\\Data\\RecetasContext.cs",
-              "RelativeDocumentMoniker": "Recetas.API\\Infrastructure\\Data\\RecetasContext.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Infrastructure\\Data\\RecetasContext.cs",
-              "RelativeToolTip": "Recetas.API\\Infrastructure\\Data\\RecetasContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:39:44.829Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IRecetaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Domain\\Interfaces\\IRecetaRepository.cs",
-              "RelativeDocumentMoniker": "Recetas.API\\Domain\\Interfaces\\IRecetaRepository.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Domain\\Interfaces\\IRecetaRepository.cs",
-              "RelativeToolTip": "Recetas.API\\Domain\\Interfaces\\IRecetaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:37:17.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "EstadoReceta.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Domain\\Entities\\EstadoReceta.cs",
-              "RelativeDocumentMoniker": "Recetas.API\\Domain\\Entities\\EstadoReceta.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Domain\\Entities\\EstadoReceta.cs",
-              "RelativeToolTip": "Recetas.API\\Domain\\Entities\\EstadoReceta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:33:34.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Receta.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Domain\\Entities\\Receta.cs",
-              "RelativeDocumentMoniker": "Recetas.API\\Domain\\Entities\\Receta.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\Domain\\Entities\\Receta.cs",
-              "RelativeToolTip": "Recetas.API\\Domain\\Entities\\Receta.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBMAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:30:12.628Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "RecetaDto.cs",
-              "DocumentMoniker": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\DTOs\\RecetaDto.cs",
-              "RelativeDocumentMoniker": "Recetas.API\\DTOs\\RecetaDto.cs",
-              "ToolTip": "C:\\Users\\guillermo.sarmiento\\source\\repos\\Hospital.API\\Recetas.API\\DTOs\\RecetaDto.cs",
-              "RelativeToolTip": "Recetas.API\\DTOs\\RecetaDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T04:20:02.426Z",
+              "WhenOpened": "2025-04-03T18:03:41.63Z",
               "EditorCaption": ""
             }
           ]

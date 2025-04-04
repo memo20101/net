@@ -17,7 +17,8 @@ using Recetas.API.Handlers;
 using Recetas.API.Infrastructure.Data;
 using Recetas.API.Infrastructure.Mappings;
 using Recetas.API.Infrastructure.Repositories;
-
+using Microsoft.Owin;
+[assembly: OwinStartup(typeof(Recetas.API.App_Start.Startup))]
 namespace Recetas.API
 {
     public class WebApiApplication : System.Web.HttpApplication

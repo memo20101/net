@@ -4,6 +4,7 @@ using Autofac;
 using Autofac.Integration.WebApi;
 using AutoMapper;
 using MediatR;
+using Microsoft.Owin;
 using Personas.API.Domain.Interfaces;
 using Personas.API.Handlers;
 using Personas.API.Infrastructure.Data;
@@ -11,7 +12,7 @@ using Personas.API.Infrastructure.Mappings;
 using Personas.API.Infrastructure.Repositories;
 using System.Reflection;
 using System.Web.Http;
-
+[assembly: OwinStartup(typeof(Personas.API.App_Start.Startup))]
 namespace Personas.API
 {
     public class WebApiApplication : System.Web.HttpApplication
@@ -49,9 +50,6 @@ namespace Personas.API
             GlobalConfiguration.Configuration.DependencyResolver = new AutofacWebApiDependencyResolver(container);
             GlobalConfiguration.Configure(WebApiConfig.Register);
 
-
         }
-
-
     }
 }

@@ -1,15 +1,18 @@
-﻿using AutoMapper;
+﻿ using AutoMapper;
 using Citas.API.Commands;
 using Citas.API.Domain.Entities;
 using Citas.API.Domain.Interfaces;
 using Citas.API.DTOs;
 using Citas.API.Infrastructure.Data;
+
 using Citas.API.Infrastructure.Repositories;
 using Citas.API.Queries;
+using Citas.API.Services;
 using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
 
@@ -20,21 +23,27 @@ namespace Citas.API.Controllers
     {
         private readonly IMediator _mediator;
         private readonly IMapper _mapper;
+        private readonly PersonasService _personasService;
 
-        public CitasController(IMediator mediator, IMapper mapper)
+        public CitasController(IMediator mediator, IMapper mapper, PersonasService personasService)
         {
             _mediator = mediator;
             _mapper = mapper;
+            _personasService = personasService;
         }
-
+        [Authorize]
         [HttpPost]
         [Route("")]
-        public IHttpActionResult ProgramarCita([FromBody] ProgramarCitaCommand command)
+        public async Task<IHttpActionResult> ProgramarCita([FromBody] ProgramarCitaCommand command)
         {
-            var citaId = _mediator.Send(command).Result;
+            var persona = await _personasService.ObtenerPersonaPorIdAsync(command.PacienteId);
+            if (persona == null)
+                return BadRequest("Paciente no encontrado");
+
+            var citaId = await _mediator.Send(command);
             return Ok(new { Id = citaId });
         }
-
+        [Authorize]
         [HttpPut]
         [Route("{id}")]
         public IHttpActionResult ActualizarCita(int id, [FromBody] ActualizarCitaCommand command)
@@ -43,7 +52,7 @@ namespace Citas.API.Controllers
             _mediator.Send(command).Wait();
             return Ok();
         }
-
+        [Authorize]
         [HttpDelete]
         [Route("{id}")]
         public IHttpActionResult CancelarCita(int id)
@@ -52,7 +61,7 @@ namespace Citas.API.Controllers
             _mediator.Send(command).Wait();
             return Ok();
         }
-
+        [Authorize]
         [HttpGet]
         [Route("{id}")]
         public IHttpActionResult ObtenerCitaPorId(int id)
@@ -61,7 +70,7 @@ namespace Citas.API.Controllers
             var cita = _mediator.Send(query).Result;
             return Ok(cita);
         }
-
+        [Authorize]
         [HttpGet]
         [Route("")]
         public IHttpActionResult ListarTodasLasCitas()
